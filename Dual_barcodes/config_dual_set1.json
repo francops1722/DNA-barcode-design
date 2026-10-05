@@ -1,0 +1,25 @@
+{
+  "array": {
+    "rows": 118,
+    "cols": 182,
+    "total_spots": 21476
+  },
+  "block": {
+    "rows": 4,
+    "cols": 4,
+    "size": 16
+  },
+  "barcodes": {
+    "bar_1_file": "libraries/bar_1in2_first18_set1.txt",
+    "bar_2_file": "libraries/bar_1in2_first18_set1.txt",
+    "bar_1_length": 18,
+    "bar_2_length": 18,
+    "total_length": 36
+  },
+  "output": {
+    "layout_file": "layout_118x182_dual_set1.csv",
+    "barcode_file": "barcodes_118x182_dual_set1.txt",
+    "stats_file": "stats_118x182_dual_set1.json"
+  },
+  "description": "Dual barcode layout for 118x182 array - Set 1 using first half of bar_1in2 library"
+}

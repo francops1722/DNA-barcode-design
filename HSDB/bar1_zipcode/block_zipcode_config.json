@@ -1,0 +1,51 @@
+{
+  "_comment": [
+    "Zipcode config for the 30x46 BLOCK grid (each block = 4x4 spots on the 118x182 array).",
+    "bar_1 = X_code(14nt) + Y_code(14nt) = 28nt total, no spacer.",
+    "X encodes the 46-block column axis; Y encodes the 30-block row axis.",
+    "28 bits per axis gives generous Hamming headroom for the spatial gradient.",
+    "Adjacent blocks target distance = 4; far blocks (>=5 steps) target distance >= 16.",
+    "Physical note: 1 block step = 4 spot steps, so block-level distances are naturally higher."
+  ],
+  "chip_geometry": {
+    "type": "rectangular",
+    "rows": 30,
+    "cols": 46,
+    "feature_size_microns": 56.0,
+    "feature_spacing_microns": 64.0
+  },
+  "error_correction": {
+    "type": "edit_distance",
+    "distances": [4, 8, 12, 16],
+    "far_features_min_distance": 16
+  },
+  "bit_to_dna": {
+    "scheme": "4-bits-per-base"
+  },
+  "sequence_qc": {
+    "gc_content_min": 0.4,
+    "gc_content_max": 0.6,
+    "g_content_max": 0.25,
+    "max_homopolymer_length": 3,
+    "reject_sequences_with_long_homopolymers": true
+  },
+  "codebook": {
+    "spacer_sequence": "",
+    "feature_id_format": "row_col",
+    "output_format": "csv"
+  },
+  "simulation": {
+    "error_model": "indel",
+    "per_base_error_rate": 0.03,
+    "distance_metric": "levenshtein",
+    "max_edit_distance_for_decoding": 4
+  },
+  "axis_code": {
+    "max_attempts_per_position": 50000,
+    "backtrack_depth": 10,
+    "random_seed": 42,
+    "tolerance": 0.5
+  },
+  "x_bit_length": 28,
+  "y_bit_length": 28
+}

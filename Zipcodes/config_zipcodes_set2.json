@@ -1,0 +1,54 @@
+{
+  "chip_geometry": {
+    "type": "rectangular",
+    "rows": 118,
+    "cols": 182,
+    "feature_size_microns": 14,
+    "feature_spacing_microns": 16
+  },
+  "error_correction": {
+    "type": "edit_distance",
+    "distances": [2, 4, 6, 8],
+    "far_features_min_distance": 8
+  },
+  "x_bit_length": 36,
+  "y_bit_length": 36,
+  "bit_to_dna": {
+    "scheme": "4-bits-per-base",
+    "mapping": {
+      "1000": "A",
+      "0100": "C",
+      "0010": "G",
+      "0001": "T"
+    }
+  },
+  "sequence_qc": {
+    "gc_content_min": 0.4,
+    "gc_content_max": 0.6,
+    "max_homopolymer_length": 3,
+    "reject_sequences_with_long_homopolymers": true
+  },
+  "codebook": {
+    "spacer_sequence": "",
+    "feature_id_format": "row_col",
+    "output_format": "csv"
+  },
+  "output": {
+    "directory": "output_zipcodes_set2",
+    "barcodes_file": "barcodes_zipcodes_set2.txt",
+    "layout_file": "layout_zipcodes_set2.csv",
+    "layout_colmajor_file": "layout_zipcodes_set2_colmajor.csv"
+  },
+  "simulation": {
+    "error_model": "substitution",
+    "per_base_error_rate": 0.01,
+    "distance_metric": "hamming",
+    "max_edit_distance_for_decoding": 3
+  },
+  "axis_code": {
+    "max_attempts_per_position": 10000,
+    "backtrack_depth": 5,
+    "random_seed": 200,
+    "tolerance": 0.5
+  }
+}

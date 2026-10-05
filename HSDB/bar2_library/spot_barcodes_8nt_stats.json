@@ -1,0 +1,119 @@
+{
+  "n_barcodes": 16,
+  "barcode_length": 8,
+  "min_hamming_distance": 5,
+  "barcodes": [
+    {
+      "idx": 0,
+      "seq": "AAACACCC",
+      "gc_content": 0.5,
+      "g_fraction": 0.0,
+      "max_homopolymer": 3
+    },
+    {
+      "idx": 1,
+      "seq": "AACACACG",
+      "gc_content": 0.5,
+      "g_fraction": 0.125,
+      "max_homopolymer": 2
+    },
+    {
+      "idx": 2,
+      "seq": "AACCGGAA",
+      "gc_content": 0.5,
+      "g_fraction": 0.25,
+      "max_homopolymer": 2
+    },
+    {
+      "idx": 3,
+      "seq": "AACGTCGT",
+      "gc_content": 0.5,
+      "g_fraction": 0.25,
+      "max_homopolymer": 2
+    },
+    {
+      "idx": 4,
+      "seq": "AAGGCTAC",
+      "gc_content": 0.5,
+      "g_fraction": 0.25,
+      "max_homopolymer": 2
+    },
+    {
+      "idx": 5,
+      "seq": "ACAACCGA",
+      "gc_content": 0.5,
+      "g_fraction": 0.125,
+      "max_homopolymer": 2
+    },
+    {
+      "idx": 6,
+      "seq": "ACACGATG",
+      "gc_content": 0.5,
+      "g_fraction": 0.25,
+      "max_homopolymer": 1
+    },
+    {
+      "idx": 7,
+      "seq": "ACCAAGTC",
+      "gc_content": 0.5,
+      "g_fraction": 0.125,
+      "max_homopolymer": 2
+    },
+    {
+      "idx": 8,
+      "seq": "ACCTGTCT",
+      "gc_content": 0.5,
+      "g_fraction": 0.125,
+      "max_homopolymer": 2
+    },
+    {
+      "idx": 9,
+      "seq": "ACGGAACA",
+      "gc_content": 0.5,
+      "g_fraction": 0.25,
+      "max_homopolymer": 2
+    },
+    {
+      "idx": 10,
+      "seq": "ACGTTCAG",
+      "gc_content": 0.5,
+      "g_fraction": 0.25,
+      "max_homopolymer": 2
+    },
+    {
+      "idx": 11,
+      "seq": "ACTCTTGC",
+      "gc_content": 0.5,
+      "g_fraction": 0.125,
+      "max_homopolymer": 2
+    },
+    {
+      "idx": 12,
+      "seq": "AGTAGCAC",
+      "gc_content": 0.5,
+      "g_fraction": 0.25,
+      "max_homopolymer": 1
+    },
+    {
+      "idx": 13,
+      "seq": "AGTCCGTT",
+      "gc_content": 0.5,
+      "g_fraction": 0.25,
+      "max_homopolymer": 2
+    },
+    {
+      "idx": 14,
+      "seq": "CAAAGAGC",
+      "gc_content": 0.5,
+      "g_fraction": 0.25,
+      "max_homopolymer": 3
+    },
+    {
+      "idx": 15,
+      "seq": "CAAGCGTA",
+      "gc_content": 0.5,
+      "g_fraction": 0.25,
+      "max_homopolymer": 2
+    }
+  ]
+}

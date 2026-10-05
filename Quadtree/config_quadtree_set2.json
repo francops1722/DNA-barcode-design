@@ -1,0 +1,31 @@
+{
+  "array": {
+    "rows": 118,
+    "cols": 182
+  },
+  "quadtree": {
+    "n_bits_x": 8,
+    "n_bits_y": 7,
+    "total_bits": 15,
+    "triplets": 3,
+    "quadtree_length_nt": 24
+  },
+  "rll": {
+    "max_run": 3
+  },
+  "library": {
+    "file": "libraries/bar_1in2_first12_set2.txt",
+    "length_nt": 12
+  },
+  "barcode": {
+    "total_length_nt": 36,
+    "description": "24nt quadtree + 12nt library = 36nt hybrid"
+  },
+  "random_seed": 100,
+  "output": {
+    "directory": "output_118x182_hybrid_set2",
+    "layout_file": "layout_118x182_hybrid_set2.csv",
+    "barcodes_file": "barcodes_118x182_hybrid_set2.txt",
+    "stats_file": "stats_118x182_hybrid_set2.json"
+  }
+}

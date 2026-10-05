@@ -1,0 +1,46 @@
+{
+  "generation_timestamp": "2026-10-05T09:31:09.712022",
+  "source_config": "/kyukon/scratch/gent/vo/000/gvo00027/vsc44685/layout_opt_public/Dual_barcodes/config_118x182_set1.json",
+  "configuration": {
+    "array": {
+      "rows": 118,
+      "cols": 182,
+      "total_spots": 21476
+    },
+    "block": {
+      "rows": 4,
+      "cols": 4,
+      "size": 16
+    },
+    "barcodes": {
+      "bar_1_file": "libraries/bar_1in2_first18_set1.txt",
+      "bar_2_file": "libraries/bar_1in2_first18_set1.txt",
+      "bar_1_length": 18,
+      "bar_2_length": 18,
+      "total_length": 36
+    },
+    "output": {
+      "layout_file": "layout_118x182_dual_set1.csv",
+      "barcode_file": "barcodes_118x182_dual_set1.txt",
+      "stats_file": "stats_118x182_dual_set1.json"
+    },
+    "description": "Dual barcode layout for 118x182 array - Set 1 using first half of bar_1in2 library"
+  },
+  "effective_parameters": {
+    "rows": 12,
+    "cols": 10,
+    "block_rows": 4,
+    "block_cols": 4,
+    "seed": 7
+  },
+  "results": {
+    "total_spots": 120,
+    "total_barcodes": 120,
+    "unique_barcodes": 120,
+    "barcode_length": 36,
+    "n_blocks": 9,
+    "unique_bar_1": 9,
+    "unique_bar_2": 120,
+    "all_unique": true
+  }
+}

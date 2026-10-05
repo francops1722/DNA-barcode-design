@@ -38,7 +38,6 @@ outputs/
 *.csv
 *.txt
 *.png
-*.json
 
 # OS files
 .DS_Store

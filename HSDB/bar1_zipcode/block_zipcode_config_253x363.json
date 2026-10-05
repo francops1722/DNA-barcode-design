@@ -1,0 +1,53 @@
+{
+  "_comment": [
+    "Zipcode config for the 64x91 BLOCK grid (253x363 spot array, 4x4 blocks).",
+    "bar_1 = X_code(14nt) + Y_code(14nt) = 28nt total, no spacer.",
+    "X encodes the 91-block column axis; Y encodes the 64-block row axis.",
+    "28 bits per axis (4-bits-per-base one-hot → 14nt DNA) comfortably encodes both axes:",
+    "  X: log2(91)=6.5 bits needed; 28 bits available → very generous error correction.",
+    "  Y: log2(64)=6.0 bits needed; 28 bits available → very generous error correction.",
+    "Same barcode format as 118x182 (28+8=36nt); only the bar_1 library differs.",
+    "Same bar_2 library (16 x 8nt) can be reused unchanged."
+  ],
+  "chip_geometry": {
+    "type": "rectangular",
+    "rows": 64,
+    "cols": 91,
+    "feature_size_microns": 56.0,
+    "feature_spacing_microns": 64.0
+  },
+  "error_correction": {
+    "type": "edit_distance",
+    "distances": [2, 4, 6, 8],
+    "far_features_min_distance": 8
+  },
+  "bit_to_dna": {
+    "scheme": "4-bits-per-base"
+  },
+  "sequence_qc": {
+    "gc_content_min": 0.4,
+    "gc_content_max": 0.6,
+    "g_content_max": 0.25,
+    "max_homopolymer_length": 3,
+    "reject_sequences_with_long_homopolymers": true
+  },
+  "codebook": {
+    "spacer_sequence": "",
+    "feature_id_format": "row_col",
+    "output_format": "csv"
+  },
+  "simulation": {
+    "error_model": "indel",
+    "per_base_error_rate": 0.03,
+    "distance_metric": "levenshtein",
+    "max_edit_distance_for_decoding": 4
+  },
+  "axis_code": {
+    "max_attempts_per_position": 50000,
+    "backtrack_depth": 10,
+    "random_seed": 43,
+    "tolerance": 0.5
+  },
+  "x_bit_length": 28,
+  "y_bit_length": 28
+}

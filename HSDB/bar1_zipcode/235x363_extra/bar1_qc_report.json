@@ -1,0 +1,31 @@
+{
+  "n_blocks": 7735,
+  "block_grid": "85x91",
+  "bar1_length_nt": 28,
+  "n_globally_unique": 7735,
+  "g_filter_applied": true,
+  "n_modified_by_g_filter": 2293,
+  "g_content": {
+    "mean": 0.2051,
+    "max": 0.25,
+    "n_above_25pct": 0
+  },
+  "gc_content": {
+    "mean": 0.4578,
+    "min": 0.1786,
+    "max": 0.7143
+  },
+  "max_homopolymer": 3,
+  "spatial_hamming_distance": {
+    "adjacent_min": 1,
+    "adjacent_mean": 6.59,
+    "adjacent_max": 13,
+    "far_min": 3,
+    "far_mean": 9.99,
+    "far_max": 19
+  },
+  "axis_code_generation": {
+    "x_hard_violations": 0,
+    "y_hard_violations": 0
+  }
+}
